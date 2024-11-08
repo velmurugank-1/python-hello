@@ -6,8 +6,8 @@ import os
 def hello_world(request):
     name = os.environ.get('NAME')
     if name == None or len(name) == 0:
-        name = "world"
-    message = "Hello, " + name + "!\n"
+        name = "Morning"
+    message = "Good, " + name + "!\n"
     return Response(message)
 
 if __name__ == '__main__':
